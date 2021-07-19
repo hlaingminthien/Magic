@@ -1,11 +1,13 @@
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-  <div>Welcome</div>
+  <a>
+    <img class="toolbar-logo" src="/assets/logo.png" />
+  </a>
   <div class="spacer">
-    <a [ngClass]="active == 1 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(1)">Home</a>
-    <a [ngClass]="active == 2 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(2)">Products</a>
-    <a [ngClass]="active == 3 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(3)">About Us</a>
-    <a [ngClass]="active == 4 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(4)">Contact Us</a>
+    <a routerLink="/home" [ngClass]="active == 1 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(1)">Home</a>
+    <a routerLink="/products" [ngClass]="active == 2 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(2)">Products</a>
+    <a routerLink="/aboutus" [ngClass]="active == 3 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(3)">About Us</a>
+    <a routerLink="/contactus" [ngClass]="active == 4 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(4)">Contact Us</a>
   </div>
   <a aria-label="Angular on Facebook" target="_blank" rel="noopener" href="https://www.facebook.com/magicmmofficial/"
     title="Facebook">
@@ -17,73 +19,29 @@
   </a>
 </div>
 
+<router-outlet></router-outlet>
 
-<div class="col-xs-12" style="margin-top:100px; width: 100%;">
-  <!-- Slide Show -->
-  <div class="mall-slide">
-    <div class="slid-content">
-      <div class="mall-show-slide fade" *ngFor="let item of Imagedata;">
-        <img src="{{item}}" style="width:100%">
-      </div>
-      <div class="mall-carousel-ind">
-        <ul>
-          <li *ngFor="let item of Imagedata; let i = index;" [class.mall-this]="startIndex - 1 === i"></li>
-        </ul>
-      </div>
+<!-- footer -->
+<div class="section-header app-section-header">
+  <div class="toolbar-left-div">
+    <img class="logo-style" src="/assets/logo.png" />
+    <div class="mrg-top-2">
+      <a routerLink="/home" class="menu-item footer-menu" (click)="myFunction(1)">Home</a>
+      <a routerLink="/products" class="menu-item footer-menu" (click)="myFunction(2)">Products</a>
+      <a routerLink="/aboutus" class="menu-item footer-menu" (click)="myFunction(3)">About Us</a>
+      <a routerLink="/contactus" class="menu-item footer-menu" (click)="myFunction(4)">Contact Us</a>
     </div>
   </div>
-
-
-  <!-- About Us -->
-  <div class="about-header">
-    <label class="about-font">About Us</label>
-    <!-- for show -->
-    <div style="height: 300px;"></div>
-  </div>
-
-  <div class="section-header">
-    <div>
-      <label style="color:#192E4F; font-weight: 700; font-size: 24px;">OUR PRODUCTS</label>
-    </div>
-  </div>
-
-  <!-- Skincare -->
-  <div class="about-header" style="margin-bottom: 5%;">
-    <label style="color:#192E4F; font-weight: 700; font-size: 40px;">SKINCARE PRODUCTS</label>
-  </div>
-
-<div style="margin: auto; display: flex; width: 1067px;">
-  <div style="margin: 20px; width: 315px; height: 500px;">
-    <div style="border: lightblue solid; width: 305px; height: 329px;">
-      <img style="width: 95%;
-  padding-top: 20px;
-  padding-left: 12px;" src="/assets/skincare/cleanser.png" />
-      <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 30px;">Cleanser</label>
-      <label class="product-label">Soft Shining and Moisturizing Amino Acid</label>
-      <label class="product-label">Facial Cleanser</label>
-      <button class="learn-btn">Learn More</button>
-    </div>
-  </div>
-  <div style="margin: 20px; width: 315px; height: 500px;">
-    <div style="border: lightblue solid; width: 305px; height: 329px;">
-      <img style="width: 95%;
-  padding-top: 20px;
-  padding-left: 12px;" src="/assets/skincare/cleanser.png" />
-      <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 30px;">Cleanser</label>
-      <label class="product-label">Soft Shining and Moisturizing Amino Acid</label>
-      <label class="product-label">Facial Cleanser</label>
-      <button class="learn-btn">Learn More</button>
-    </div>
-  </div>
-  <div style="margin: 20px; width: 315px; height: 500px;">
-    <div style="border: lightblue solid; width: 305px; height: 329px;">
-      <img style="width: 95%;
-  padding-top: 20px;
-  padding-left: 12px;" src="/assets/skincare/cleanser.png" />
-      <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 30px;">Cleanser</label>
-      <label class="product-label">Soft Shining and Moisturizing Amino Acid</label>
-      <label class="product-label">Facial Cleanser</label>
-      <button class="learn-btn">Learn More</button>
-    </div>
+  <a aria-label="Angular on Facebook" target="_blank" rel="noopener" href="https://www.facebook.com/magicmmofficial/"
+    title="Facebook" class="toolbar-right-img">
+    <img src="https://img.icons8.com/ios-glyphs/30/26e07f/phone--v1.png" />
+    <label class="toolbar-phone">+959-761-888-999</label>
+    <img class="mrg-top-2" src="https://img.icons8.com/ios-glyphs/30/4a90e2/facebook-new.png" />
+  </a>
+</div>
+<div class="section-header center-text" style="border: solid 2px #ffff;">
+  <div>
+    <label style="color:#192E4F; font-weight: 700; font-size: 14px;">© Copyright 2021 Magic Myanmar</label>
   </div>
 </div>
+

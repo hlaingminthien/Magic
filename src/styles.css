@@ -1,20 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* @import "../node_modules/bootstrap/dist/css/bootstrap.min.css"; */
 
+span, label, a, table, .textbox, .input.textbox, .textarea, .div
+{
+  font-family:  Arial,"Butler", Times, serif;
+}
 
-
-:host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+/* app css */
 
   .spacer {
     flex: 1;
     text-align: center;
+    padding-left: 110px;
   }
 
   .toolbar {
@@ -45,6 +43,14 @@
     align-items: center;
   }
 
+  input:focus-visible {
+    outline: none !important;
+  }
+
+  textarea:focus-visible {
+    outline: none !important;
+  }
+
   a,
   a:visited,
   a:hover {
@@ -68,14 +74,19 @@
     align-items: center;
   }
 
+  .footer-menu {
+    border:none !important;
+  }
+
   .menu-item {
     height: 35px;
     display: inline-block;
     padding: 10px;
     border-top: 4px solid white;
     cursor: pointer;
-    color: #192E4F;
+    color: #192E4F !important;
     font-size: 20px;
+    font-weight: 400;
   }
 
   .menu-item-active {
@@ -83,9 +94,10 @@
     display: inline-block;
     padding: 10px;
     border-top: 4px solid gray;
-    color: #192E4F;
+    color: #192E4F !important;
     cursor: pointer;
     font-size: 20px;
+    font-weight: 400;
   }
 
   .footer-menu-border {
@@ -103,6 +115,7 @@
   .about-font {
     font-size: 40px;
     font-weight: 700;
+    /* font-family:  Arial,"Butler", Times, serif !important; */
   }
 
   .learn-btn {
@@ -115,6 +128,11 @@
     cursor: pointer;
     border-style: none;
     color: white;
+  }
+
+  .toolbar-logo {
+    width: 47%;
+    padding-left: 25%;
   }
   
 /* slide show */
@@ -201,4 +219,166 @@
   display: block;
   margin-top: 10px;
   text-align: center;
+}
+
+/* end app css */
+
+
+/* product div */
+
+.prod-div {
+  margin: auto; 
+  display: flex; 
+  overflow-x: hidden;
+  width: 1067px;
+}
+
+@media only screen and (max-width: 1055px) {
+  .prod-div {
+    margin: auto; 
+    display: flex; 
+    overflow-x: scroll;
+    width: auto;
+  }
+}
+
+/* ............ */
+
+.overall-container {
+  margin-top:100px; 
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.prod-cate {
+  margin: 20px; 
+  width: 315px; 
+  height: 500px;
+}
+
+.mrg-btm-5 {
+  margin-bottom: 5%;
+}
+
+.send-btn {
+  background-color: #5E90FF;
+  width: 90%;
+  margin-top: 10px;
+  border: none;
+  height: 50px; 
+  border-radius: 5px;
+  margin-bottom: 7%; 
+  color: #fff;
+  font-size: 19px;
+}
+
+.contact-input {
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.contact-textarea {
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  height: 100px;
+}
+
+.contact-header-div {
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+
+.contact-header {
+  font-weight:700; 
+  font-size:24px;
+  margin-top: 20px;
+  padding-left: 20%;
+}
+
+.contact-form {
+  margin-top: 7%;
+  border: solid 1px #D3E2FF;
+  background: #D3E2FF;
+  border-radius: 5px;
+  width: 508px;
+  height: auto;
+  float: right;
+  padding-left: 55px;
+  padding-right: 10px;
+  margin-right: 10%;
+}
+
+.mrg-top-2 {
+  margin-top: 2%;
+}
+
+.mrg-top-7 {
+  margin-top: 7%;
+}
+
+.logo-style {
+  margin-left: 7%;
+  size: 70%;
+}
+
+.toolbar-phone {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-bottom: 24px;
+}
+
+.app-section-header {
+  margin-top: 5%;
+  height: 364px;
+}
+
+.toolbar-right-img {
+  float: right;
+  margin-top: 14%;
+}
+
+.toolbar-left-div {
+  float:left;
+  margin-top: 7%;
+}
+
+.contact-cate {
+  border: #5E90FF solid;
+  background-color: #5E90FF; 
+  width: 305px; 
+  height: 329px;
+}
+
+.contact-label {
+  padding-top: 15px;
+  padding-left: 47px;
+  color:#ffff;
+}
+
+.contact-label-div {
+  width: 209px;
+  height: 50px;
+  background: #5E90FF;
+  border-radius: 50px;
+  margin-left: 20%;
+  margin-top: 7%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.slim-btn {
+  background-color: #192E4F;
+  border-radius: 10px;
+  width: 2%;
+  margin-right: 7px;
 }
