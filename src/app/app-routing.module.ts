@@ -4,10 +4,12 @@ import { AboutusComponent } from './aboutus.component';
 import { BBcreamComponent } from './bbcream.component';
 import { CleanserComponent } from './cleanser.component';
 import { CollagenComponent } from './collagen.component';
+import { ConditionerComponent } from './conditioner.component';
 import { ContactusComponent } from './contactus.component';
 import { EmulsionComponent } from './emulsion.component';
 import { EssenceComponent } from './essence.component';
 import { FacialMaskComponent } from './facialmask.component';
+import { GelComponent } from './gel.component';
 import { HaircareProductComponent } from './haircareproduct.component';
 import { HealthcareProductComponent } from './healthcateproduct.component';
 import { HomeComponent } from './home.component';
@@ -15,8 +17,10 @@ import { JellyComponent } from './jelly.component';
 import { LoseweightsetComponent } from './loseweightset.component';
 import { PowderComponent } from './powder.component';
 import { ProductsComponent } from './products.component';
+import { ShampooComponent } from './shampoo.component';
 import { SkincareProductComponent } from './skincareproduct.component';
 import { SleepingmaskComponent } from './sleepingmask.component';
+import { SoapComponent } from './soap.component';
 import { TonerComponent } from './toner.component';
 
 
@@ -81,16 +85,16 @@ const routes: Routes = [
 
   // Healthcare product
   //Soap detail
-  { path: 'soap', component: BBcreamComponent },
+  { path: 'soap', component: SoapComponent },
 
   //Conditioner detail
-  { path: 'conditioner', component: BBcreamComponent },
+  { path: 'conditioner', component: ConditionerComponent },
 
   //gel detail
-  { path: 'gel', component: BBcreamComponent },
+  { path: 'gel', component: GelComponent },
 
   //Shampoo detail
-  { path: 'shampoo', component: BBcreamComponent },
+  { path: 'shampoo', component: ShampooComponent },
 ];
 
 @NgModule({

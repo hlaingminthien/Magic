@@ -23,6 +23,10 @@ import { TonerComponent } from './toner.component';
 import { LoseweightsetComponent } from './loseweightset.component';
 import { JellyComponent } from './jelly.component';
 import { CollagenComponent } from './collagen.component';
+import { ConditionerComponent } from './conditioner.component';
+import { GelComponent } from './gel.component';
+import { ShampooComponent } from './shampoo.component';
+import { SoapComponent } from './soap.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +49,10 @@ import { CollagenComponent } from './collagen.component';
     LoseweightsetComponent,
     JellyComponent,
     CollagenComponent,
+    ConditionerComponent,
+    GelComponent,
+    ShampooComponent,
+    SoapComponent,
   ],
   imports: [
     BrowserModule,

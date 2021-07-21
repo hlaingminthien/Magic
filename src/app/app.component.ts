@@ -12,7 +12,12 @@ export class AppComponent {
   constructor(private ngZone: NgZone ) { }
 
   ngOnInit() {
-    this.active = Number(localStorage.getItem('activmenu'));
+    if(localStorage.getItem('activmenu')){
+      this.active = Number(localStorage.getItem('activmenu'));
+    }
+    else {
+      this.active = 1;
+    }
     console.log(this.active);
   }
 
