@@ -1,4 +1,5 @@
 import { Component, NgZone } from '@angular/core';
+import { LocalizationService } from './localization.service';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,10 @@ import { Component, NgZone } from '@angular/core';
 })
 export class AppComponent {
   title = 'magic';
-  active = 1;
+  active:number = 1;
+  lang:string = 'myn';  // Default language is Myanmar
 
-  constructor(private ngZone: NgZone ) { }
+  constructor(private ngZone: NgZone,private localizationService: LocalizationService ) { }
 
   ngOnInit() {
     if(localStorage.getItem('activmenu')){
@@ -21,9 +23,15 @@ export class AppComponent {
     console.log(this.active);
   }
 
-  myFunction(data:any) {
+  myFunction(data:number) {
     this.active = data;
     localStorage.setItem('activmenu', JSON.stringify(this.active));
+  }
+
+  changeLanguage(data:string){
+    this.lang = data;
+    localStorage.setItem('language', data);
+    this.localizationService.initService();
   }
   
 }

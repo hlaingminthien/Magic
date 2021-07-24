@@ -4,10 +4,14 @@
     <img class="toolbar-logo" src="/assets/logo.png" />
   </a>
   <div class="spacer">
-    <a routerLink="/home" [ngClass]="active == 1 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(1)">Home</a>
-    <a routerLink="/products" [ngClass]="active == 2 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(2)">Products</a>
-    <a routerLink="/aboutus" [ngClass]="active == 3 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(3)">About Us</a>
-    <a routerLink="/contactus" [ngClass]="active == 4 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(4)">Contact Us</a>
+    <a routerLink="/home" [ngClass]="active == 1 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(1)">
+      {{'banner.home' | translate}}</a>
+    <a routerLink="/products" [ngClass]="active == 2 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(2)">
+      {{'banner.products' | translate}}</a>
+    <a routerLink="/aboutus" [ngClass]="active == 3 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(3)">
+      {{'banner.aboutus' | translate}}</a>
+    <a routerLink="/contactus" [ngClass]="active == 4 ? 'menu-item-active' : 'menu-item'" (click)="myFunction(4)">
+      {{'banner.contactus' | translate}}</a>
   </div>
   <a aria-label="Angular on Facebook" target="_blank" rel="noopener" href="https://www.facebook.com/magicmmofficial/"
     title="Facebook">
@@ -16,6 +20,12 @@
     vertical-align: middle;
     margin-bottom: 24px;">+959-761-888-999</label>
     <img style="margin-top: 15px;" src="https://img.icons8.com/ios-glyphs/30/4a90e2/facebook-new.png" />
+  </a>
+  <a *ngIf="lang == 'myn'">
+    <img style="width: 30%;cursor:pointer;" (click)="changeLanguage('en')" src="/assets/language/myanmar.png" />
+  </a>
+  <a *ngIf="lang == 'en'">
+    <img style="width: 30%;cursor:pointer;" (click)="changeLanguage('myn')" src="/assets/language/english.png" />
   </a>
 </div>
 
@@ -26,10 +36,10 @@
   <div class="toolbar-left-div">
     <img class="logo-style" src="/assets/logo.png" />
     <div class="mrg-top-2">
-      <a routerLink="/home" class="menu-item footer-menu" (click)="myFunction(1)">Home</a>
-      <a routerLink="/products" class="menu-item footer-menu" (click)="myFunction(2)">Products</a>
-      <a routerLink="/aboutus" class="menu-item footer-menu" (click)="myFunction(3)">About Us</a>
-      <a routerLink="/contactus" class="menu-item footer-menu" (click)="myFunction(4)">Contact Us</a>
+      <a routerLink="/home" class="menu-item footer-menu" (click)="myFunction(1)">{{'banner.home' | translate}}</a>
+      <a routerLink="/products" class="menu-item footer-menu" (click)="myFunction(2)">{{'banner.products' | translate}}</a>
+      <a routerLink="/aboutus" class="menu-item footer-menu" (click)="myFunction(3)">{{'banner.aboutus' | translate}}</a>
+      <a routerLink="/contactus" class="menu-item footer-menu" (click)="myFunction(4)">{{'banner.contactus' | translate}}</a>
     </div>
   </div>
   <a aria-label="Angular on Facebook" target="_blank" rel="noopener" href="https://www.facebook.com/magicmmofficial/"

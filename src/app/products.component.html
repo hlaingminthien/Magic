@@ -35,13 +35,13 @@
 
   <div class="section-header">
     <div>
-      <label style="color:#192E4F; font-weight: 700; font-size: 24px;">OUR PRODUCTS</label>
+      <label style="color:#192E4F; font-weight: 700; font-size: 24px;">{{'banner.ourproducts' | translate}}</label>
     </div>
   </div>
 
   <!-- Skincare -->
   <div class="about-header mrg-btm-5">
-    <label style="color:#192E4F; font-weight: 700; font-size: 40px;">SKINCARE PRODUCTS</label>
+    <label style="color:#192E4F; font-weight: 700; font-size: 40px;">{{'banner.skincareproducts' | translate}}</label>
   </div>
 
   <div class="prod-div" *ngIf="skinpage == 1">
@@ -53,7 +53,7 @@
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 30px;">Cleanser</label>
         <label class="product-label">Soft Shining and Moisturizing Amino Acid</label>
         <label class="product-label">Facial Cleanser</label>
-        <button class="learn-btn" [routerLink]="['/cleanser']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/cleanser']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
     <div style="margin: 20px; width: 315px; height: 500px;">
@@ -63,7 +63,7 @@
         padding-left: 61px;" src="/assets/skincare/BBCream.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 30px;">BB Cream</label>
         <label class="product-label">Light and Concaler</label>
-        <button class="learn-btn" style="margin-top:45px !important;" [routerLink]="['/bbcream']">Learn More</button>
+        <button class="learn-btn" style="margin-top:45px !important;" [routerLink]="['/bbcream']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
     <div style="margin: 20px; width: 315px; height: 500px;">
@@ -73,7 +73,7 @@
     padding-left: 12px;" src="/assets/skincare/sleepingmask.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 30px;">Sleeping Mask</label>
         <label class="product-label">Peptide Repair Facial Sleeping Mask</label>
-        <button class="learn-btn" style="margin-top:45px !important;" [routerLink]="['/sleepingmask']">Learn More</button>
+        <button class="learn-btn" style="margin-top:45px !important;" [routerLink]="['/sleepingmask']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
   </div>
@@ -86,7 +86,7 @@
     padding-left: 12px;" src="/assets/skincare/powder.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 30px;">Seeting Powder</label>
         <label class="product-label">Magic Featherlight Setting Powder</label>
-        <button class="learn-btn" [routerLink]="['/powder']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/powder']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
     <div style="margin: 20px; width: 315px; height: 500px;">
@@ -96,7 +96,7 @@
         padding-left: 70px;" src="/assets/skincare/emulsion.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 30px;">Emulsion</label>
         <label class="product-label">Moisturizing and Light Protection Emulsion</label>
-        <button class="learn-btn" [routerLink]="['/emulsion']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/emulsion']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
     <div style="margin: 20px; width: 315px; height: 500px;">
@@ -106,7 +106,7 @@
     padding-left: 12px;" src="/assets/skincare/mask.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 30px;">Facial Mask</label>
         <label class="product-label">Sooth Tender and Shining Facial Mask</label>
-        <button class="learn-btn" [routerLink]="['/facialmask']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/facialmask']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
   </div>
@@ -119,7 +119,7 @@
         padding-left: 58px;" src="/assets/skincare/essence.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 30px;">Essence</label>
         <label class="product-label">Skin  permeation, Multi-Effect Repair, Shining Essence</label>
-        <button class="learn-btn" [routerLink]="['/essence']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/essence']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
     <div style="margin: 20px; width: 315px; height: 500px;">
@@ -129,7 +129,7 @@
         padding-left: 66px;" src="/assets/skincare/toner.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 30px;">Toner</label>
         <label class="product-label">Luxurious, Contain Treasure Activate, relieve toner</label>
-        <button class="learn-btn" [routerLink]="['/toner']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/toner']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
   </div>
@@ -140,12 +140,12 @@
     <button class="hand slim-btn" (click)="showskinpage(3)"></button>
   </div>
   <div class="about-header mrg-btm-5" style="margin-top: 0px !important;">
-    <a class="hand" routerLink="/skincareproduct">View all skincare products</a>
+    <a class="hand" routerLink="/skincareproduct">{{'banner.viewallskincare' | translate}}</a>
   </div>
 
   <!-- Healthcare -->
   <div class="about-header mrg-btm-5">
-    <label style="color:#192E4F; font-weight: 700; font-size: 40px;">HEALTHCARE PRODUCTS</label>
+    <label style="color:#192E4F; font-weight: 700; font-size: 40px;">{{'banner.healthcare' | translate}}</label>
   </div>
 
   <div class="prod-div" *ngIf="healthpage == 1">
@@ -156,7 +156,7 @@
     padding-left: 12px;" src="/assets/healthcare/collagen.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 75px;">Collagen Probiotics Solid Beverage</label>
         <label class="product-label">Peptide Collagen and get rid of lines and wrinkles</label>
-        <button class="learn-btn" [routerLink]="['/collagen']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/collagen']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
     <div style="margin: 20px; width: 315px; height: 500px;">
@@ -166,7 +166,7 @@
         padding-left: 42px;" src="/assets/healthcare/weightloss.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 105px;">Magic Lose Weight Set</label>
         <label class="product-label">Hot compress to lose weight safely and healthy</label>
-        <button class="learn-btn" [routerLink]="['/loseweightset']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/loseweightset']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
     <div style="margin: 20px; width: 315px; height: 500px;">
@@ -176,7 +176,7 @@
     padding-left: 12px;" src="/assets/healthcare/jellly.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 115px;">Bird Nets Collagen Probiotics Jelly</label>
         <label class="product-label">Elimination of toxins in the body and the intestine</label>
-        <button class="learn-btn" [routerLink]="['/jelly']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/jelly']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
   </div>
@@ -186,12 +186,12 @@
   </div>
 
   <div class="about-header" style="margin-bottom: 5%;margin-top: 0px !important;">
-    <a style="cursor: pointer;" routerLink="/healthcareproduct">View all healthcare products</a>
+    <a style="cursor: pointer;" routerLink="/healthcareproduct">{{'banner.viewallhealthcare' | translate}}</a>
   </div>
 
   <!-- Haircare -->
   <div class="about-header" style="margin-bottom: 5%;">
-    <label style="color:#192E4F; font-weight: 700; font-size: 40px;">HAIRCARE PRODUCTS</label>
+    <label style="color:#192E4F; font-weight: 700; font-size: 40px;">{{'banner.haircare' | translate}}</label>
   </div>
 
   <div class="prod-div" *ngIf="hairpage == 1">
@@ -202,7 +202,7 @@
     padding-left: 12px;" src="/assets/haircare/soap.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 75px;">Whitening Handmade Soap</label>
         <label class="product-label">Clear skin, improve calm tender and elastic</label>
-        <button class="learn-btn" [routerLink]="['/soap']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/soap']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
     <div style="margin: 20px; width: 315px; height: 500px;">
@@ -212,7 +212,7 @@
         padding-left: 98px;" src="/assets/haircare/conditioner.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 51px;">Fragrance Conditioner</label>
         <label class="product-label">Hot compress to lose weight safely and healthy</label>
-        <button class="learn-btn" [routerLink]="['/conditioner']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/conditioner']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
     <div style="margin: 20px; width: 315px; height: 500px;">
@@ -222,7 +222,7 @@
         padding-left: 98px;" src="/assets/haircare/showergel.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 58px;">Fragrance Shower Gel</label>
         <label class="product-label">Elimination of toxins in the body and the intestine</label>
-        <button class="learn-btn" [routerLink]="['/gel']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/gel']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
   </div>
@@ -235,7 +235,7 @@
         padding-left: 106px;" src="/assets/haircare/shampoo.png" />
         <label class="product-label" style="font-weight: 700;font-size: 15px;margin-top: 75px;">Shampoo</label>
         <label class="product-label">Enjoy Life, Frangrance Lasting and Emission Charm</label>
-        <button class="learn-btn" [routerLink]="['/shampoo']">Learn More</button>
+        <button class="learn-btn" [routerLink]="['/shampoo']">{{'banner.learnmore' | translate}}</button>
       </div>
     </div>
   </div>
@@ -246,7 +246,7 @@
   </div>
 
   <div class="about-header" style="margin-bottom: 5%;margin-top: 0px !important;">
-    <a style="cursor: pointer;" routerLink="/haircareproduct">View all haircare products</a>
+    <a style="cursor: pointer;" routerLink="/haircareproduct">{{'banner.viewallhaircare' | translate}}</a>
   </div>
 </div>
   

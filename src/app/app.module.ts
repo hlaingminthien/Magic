@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
@@ -27,6 +29,14 @@ import { ConditionerComponent } from './conditioner.component';
 import { GelComponent } from './gel.component';
 import { ShampooComponent } from './shampoo.component';
 import { SoapComponent } from './soap.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { InternationalizationModule } from './internationliztion.module';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, '../assets/locales/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -59,6 +69,14 @@ import { SoapComponent } from './soap.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     CommonModule,
+    InternationalizationModule.forRoot({ locale_id: 'myn' }),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,17 @@
+{
+    "banner": {
+      "home" : "Home",
+      "products": "Products",
+      "aboutus": "About Us",
+      "contactus": "Contact Us",
+      "ourproducts": "OUR PRODUCTS",
+      "skincareproducts": "SKINCARE PRODUCTS",
+      "healthcare":"HEALTHCARE PRODUCTS",
+      "haircare":"HAIRCARE PRODUCTS",
+      "learnmore": "Learn More",
+      "viewallskincare":"View all skincare products",
+      "viewallhealthcare":"View all healthcare products",
+      "viewallhaircare":"View all haircare products",
+      "haveaprivatequestion": "HAVE A PRIVATE QUESTION?"
+    }
+  }
